@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RubyOnRailsFirstproject</title>
+    <link href="design.css" rel="stylesheet" type="text/css">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <%= render 'layouts/nav' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <%= render 'layouts/foot' %>
+
   </body>
 </html>
