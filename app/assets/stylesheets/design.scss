@@ -10,3 +10,18 @@ footer{
 .centered {
   text-align: center;
 }
+
+.side-margin {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.light-round-bg {
+  background-color: #DADADA;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.light-round-bg-hover:hover {
+  background-color: #CCCCCC;
+}

@@ -18,6 +18,19 @@
         </div>
       </li>
     </ul>
+    <div style="margin-right: 50px;">
+      <ul class="navbar-nav mr-auto navbar-right">
+        <li class="nav navbar-nav navbar-right side-margin light-round-bg light-round-bg-hover">
+          <%= link_to "Sign Up", new_user_registration_path %>
+        </li>
+        <li class="nav navbar-nav navbar-right side-margin light-round-bg light-round-bg-hover">
+          <%= link_to "Sign In", new_user_session_path %>
+        </li>
+        <li class="nav navbar-nav navbar-right side-margin light-round-bg light-round-bg-hover">
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        </li>
+      </ul>
+    </div>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
