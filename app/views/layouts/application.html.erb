@@ -7,11 +7,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <div style="height: 10px;">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </div>
-
   </head>
 
   <body>
@@ -25,6 +20,11 @@
     </div>
 
     <%= render 'layouts/foot' %>
+
+    <div style="height: 0px;">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
 
   </body>
 </html>
