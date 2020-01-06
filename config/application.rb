@@ -2,6 +2,9 @@ require_relative 'boot'
 
 require 'rails/all'
 
+# import custom ruby file and libs
+require "./lib/tasks/myFile"
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
